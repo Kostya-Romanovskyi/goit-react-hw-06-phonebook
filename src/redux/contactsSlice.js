@@ -14,7 +14,7 @@ export const contactsSlice = createSlice({
       );
 
       if (alertContact) {
-        return alert('бегите');
+        return alert(`${action.payload.name} is already in contacts`);
       }
 
       state.contacts.push(action.payload);
